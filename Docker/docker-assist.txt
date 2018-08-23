@@ -3,10 +3,10 @@ docker kill $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 
 # Create container
-docker build -t operating_systems .
+docker build -t operating_systems /Users/mikhailtkachenko/Documents/GitHub/Operating-Systems---F2018/Docker
 
 # Run container
-docker run -d -t -i --name operating_systems -v /Users/mikhailtkachenko/Desktop/Docker/OS/common:/common operating_systems
+docker run -d -t -i --name operating_systems -v /Users/mikhailtkachenko/Documents/GitHub/Operating-Systems---F2018/Docker/common_files:/common_files operating_systems
 
 # Get inside container
-docker exec -it operatig_systems /bin/bash
+docker exec -it operating_systems /bin/bash
