@@ -1,0 +1,500 @@
+   34  git commit "MErged branches"
+   35  git reset hard
+   36  git reset --hard 42c0205f0616fdfcd01656cf3c2d0b7d9ac2ea57 
+   37  git push force
+   38  git push --force
+   39  ssh root@37.46.132.57
+   40  ssh root@37.46.132.57
+   41  /Users/mikhailtkachenko/Downloads/sqlite-tools-osx-x86-3220000/sqlite3 ; exit;
+   42  /Users/mikhailtkachenko/Downloads/sqlite-tools-osx-x86-3220000/sqlite3 ; exit;
+   43  /Users/mikhailtkachenko/Downloads/sqlite-tools-osx-x86-3220000/sqlite3 ; exit;
+   44  /Users/mikhailtkachenko/Downloads/sqlite-tools-osx-x86-3220000/sqlite3 ; exit;
+   45  ssh root@37.46.132.57
+   46  ssh root@37.46.132.57
+   47  ssh root@37.46.132.57
+   48  ssh root@37.46.132.57
+   49  ping 37.46.132.57
+   50  curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+   51  curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
+   52  ping 37.46.132.57
+   53  ssh root@37.46.132.57
+   54  ls
+   55  cd Applications/PycharmProjects
+   56  ls
+   57  cd PycharmProjects/InnoLib-Media-Keeper/
+   58  git fetch origin
+   59  git checkout -b Din origin/Din
+   60  git checkout -b Din origin/Din
+   61  git checkout -b Din origin/Din
+   62  git commit
+   63  git checkout -b Din origin/Din
+   64  git commit "test"
+   65  git commit .
+   66  git commit 
+   67  git checkout -b Din origin/Din
+   68  cd PycharmProjects/InnoLib-Media-Keeper/
+   69  git checkout -b Din origin/Din
+   70  git commit
+   71  git add
+   72  git add .
+   73  git commit
+   74  git commit
+   75  git checkout -b Din origin/Din
+   76  git push
+   77  git checkout -b Din origin/Din
+   78  git add .
+   79  git commit
+   80  cd PycharmProjects/InnoLib-Media-Keeper/
+   81  git fetch origin
+   82  git checkout -b Din origin/Din
+   83  rm -rm .ideas
+   84  rm -rf .ideas
+   85  ls
+   86  git checkout -b Din origin/Din
+   87  git add .
+   88  git commit
+   89  git commit
+   90  git commit
+   91  git commit
+   92  git push
+   93  git checkout Din
+   94  git stash
+   95  git checkout -b Din origin/Din
+   96  git merge 12102Master
+   97  git checkout 12102Master
+   98  git merge -s 
+   99  gi
+  100  git checkout 12102Master
+  101  git commit "Merged files"
+  102  git add .
+  103  git checkout 12102Master
+  104  git commit .
+  105  git checkout 12102Master
+  106  git commit
+  107  git checkout 12102Master
+  108  git commit -m "Resolving conflicts"
+  109  git checkout 12102Master
+  110  git merge --no-ff Din
+  111  git merge --no-ff Din
+  112  git push origin 12102Master
+  113  easy_install -U sphinx
+  114  easy_install
+  115  pip3 install easy_install
+  116  sphinx-quckstart
+  117  sphinx-quickstart
+  118  make builder
+  119  make latex
+  120  make latexpdf
+  121  ls
+  122  cd source
+  123  ls
+  124  sudo nano conf.py
+  125  make latexpdf
+  126  make latex
+  127  make html
+  128  make latexpdf
+  129  make html
+  130  make builder
+  131  make builder
+  132  make builder
+  133  make builder
+  134  make builder
+  135  cd ..
+  136  make latexpdf
+  137  make latexpdf
+  138  make latexpdf
+  139  make latexpdf
+  140  git stash
+  141  cd PycharmProjects/InnoLib-Media-Keeper/
+  142  git stash
+  143  git rm user.py
+  144  git stash
+  145  git checkout dev
+  146  git pull
+  147  git rm .idea/workspace.xml
+  148  git rm .idea/workspace.xml
+  149  git rm .idea/workspace.xml
+  150  git pull
+  151  touch .gitignore
+  152  git rm --cached .DS_Store
+  153  git pull
+  154  git rm --cached .DS_Store
+  155  git pull
+  156  find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch´
+  157  find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch
+  158  git pull
+  159  echo ".DS_Store" >> ~/.gitignore
+  160  git pull
+  161  git checkout dev
+  162  git push master -force
+  163  git push master --force
+  164  git push master --force
+  165  git add .
+  166  git commit "D2"
+  167  git commit 
+  168  git push origin master
+  169  git push dev:master
+  170  git fetch origin
+  171  git checkout -b dev origin/dev
+  172  git merge master
+  173  git checkout master
+  174  git merge --no-ff dev
+  175  git merge --no-ff dev
+  176  git push origin master
+  177  git fetch origin
+  178  git checkout -b dev origin/dev
+  179  git checkout -b dev
+  180  git checkout dev
+  181  git checkout dev
+  182  git merge master
+  183  git checkout master
+  184  git merge --no-ff dev
+  185  git rm user.py
+  186  git push
+  187  git add .
+  188  git commit
+  189  git push
+  190  git checkout master
+  191  git rm user.py
+  192  git commit -a "Deleted user.py"
+  193  git commit
+  194  git push
+  195  git fetch origin
+  196  git checkout -b dev origin/dev
+  197  git checkout -b dev origin/dev
+  198  git checkout dev
+  199  git merge master
+  200  git checkout master
+  201  git merge --no-ff dev
+  202  git push origin master
+  203  git pull
+  204  git push origin master
+  205  git checkout master
+  206  git rm ILMK_Presentation_Delivery1.pdf
+  207  git commit
+  208  git commit
+  209  git commit -F
+  210  git commit -f
+  211  git commit --f
+  212  git commit -a
+  213  git commit -m
+  214  ssh root@37.46.132.57
+  215  git clone https://github.com/ponyorm/pony
+  216  python3 setup.py
+  217  cd pont
+  218  cd pony
+  219  python3 setup.py
+  220  ssh root@37.46.132.57
+  221  ssh root@37.46.132.57
+  222  ssh root@37.46.132.57
+  223  ssh root@37.46.132.57
+  224  ssh root@37.46.132.57
+  225  ssh root@37.46.132.57
+  226  ssh root@37.46.132.57
+  227  ssh root@37.46.132.57
+  228  grep CRON /var/log/syslog
+  229  cd /var
+  230  ls
+  231  cd /var/log
+  232  ls
+  233  nano /var/log/system.log
+  234  ssh root@37.46.132.57
+  235  ssh root@37.46.132.57
+  236  ssh root@37.46.132.57
+  237  ssh root@37.46.132.57
+  238  ssh root@37.46.132.57
+  239  ssh root@37.46.132.57
+  240  ssh root@37.46.132.57
+  241  ssh root@37.46.132.57
+  242  sudo rm -f /Library/Managed\ Preferences/<username>/com.apple.Spotlight.plist
+  243  sudo rm -f /Library/Managed\ Preferences/mikhailtkachenko/com.apple.Spotlight.plist
+  244  sudo rm -f /Library/Managed\ Preferences/com.apple.Spotlight.plist
+  245  sudo killall Spotlight
+  246  Moscow CTF School 2017syslog -k Sender mdworker -o -k Sender mds | grep -v 'boxd\|Norm' | tail | open -ef
+  247  syslog -k Sender mdworker -o -k Sender mds | grep -v 'boxd\|Norm' | tail | open -ef
+  248  ping
+  249  ping google.com -n 10
+  250  $ curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-joomla/master/docker-compose.yml > docker-compose.yml
+  251  curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-joomla/master/docker-compose.yml > docker-compose.yml
+  252  docker-compose up -d
+  253  mysql
+  254  mysql
+  255  mariadb
+  256  $ docker network create joomla-tier
+  257  docker network create joomla-tier
+  258  docker run -d --name mariadb -e ALLOW_EMPTY_PASSWORD=yes   --net joomla-tier   --volume /path/to/mariadb-persistence:/bitnami   bitnami/mariadb:latest
+  259  $ docker-compose up -d
+  260  docker-compose up -d
+  261  docker network create joomla-tier
+  262  docker run -d --name mariadb -e ALLOW_EMPTY_PASSWORD=yes --net joomla-tier bitnami/mariadb
+  263  docker run -d -p 80:80 -p 443:443 --name joomla --net joomla-tier bitnami/joomla
+  264  docker run -d -p 80:80 -p 443:443 --name joomla --net joomla-tier bitnami/joomla
+  265  docker run
+  266  docker run --help
+  267  docker run -d --name mariadb -e ALLOW_EMPTY_PASSWORD=yes   --net joomla-tier   --volume /path/to/mariadb-persistence:/bitnami   bitnami/mariadb:latest
+  268   docker pull bitnami/joomla:latest
+  269  docker run -d -p 80:80 -p 443:443 --name joomla --net joomla-tier bitnami/joomla
+  270  docker-compose up -d
+  271  docker run -d -p 80:80 -p 443:443 --name joomla --net joomla-tier bitnami/joomla
+  272  $ docker-compose up -d
+  273  docker-compose up -d
+  274  python manage.py makemigrations zelebot
+  275  python3 manage.py makemigrations zelebot
+  276  python3 manage.py makemigrations zelebot
+  277  python3 manage.py makemigrations zelebot
+  278  python3 manage.py makemigrations zelebot
+  279  python3 manage.py makemigrations zelebot
+  280  python3 manage.py makemigrations zelebot
+  281  migrate
+  282  sqlmigrate zelebot 001
+  283  python3 manage.py makemigrations zelebot
+  284  python3 manage.py makemigrations zelebot
+  285  python3 manage.py makemigrations zelebot
+  286  python3 manage.py makemigrations zelebot
+  287  python3 manage.py makemigrations zelebot
+  288  python3 manage.py makemigrations zelebot
+  289  docker run hello-world
+  290  docker run hello-world
+  291  docker pull busybox
+  292  docker images
+  293  docker run busybox
+  294  docker run busybox echo "hello from busybox"
+  295  docker ps
+  296  docker ps -a
+  297  docker run -it busybox sh
+  298  docker build
+  299  docker build -t /Desktop
+  300  docker build -t /Desktop .
+  301  docker build -t Desktop .
+  302  docker build -t Desktop .
+  303  docker build -t /Desktop .
+  304  docker build /Desktop .
+  305  docker build -t /Desktop/Dockers .
+  306  cd /Desktop
+  307  docker build -t /ockers .
+  308  docker build -t ockers .
+  309  cd /Desktop
+  310  cd Desktop
+  311  docker build -t ockers .
+  312  docker build -t ockers .
+  313  docker build -t ockers .
+  314  docker build -t ockers .
+  315  docker build -t ockers .
+  316  docker build -t ockers .
+  317  docker build -t ockers .
+  318  docker build -t ockers .
+  319  docker build -t ockers ockers
+  320  docker build -t ockers .
+  321  ls
+  322  ls -lah
+  323  docker build -t ockers ockers
+  324  docker build -t . ockers
+  325  docker build ./Dockerfile ockers
+  326  docker build -t ockers ockers
+  327  docker build -f ./Dockerfile ockers
+  328   docker ps -a
+  329  docker run jolly_brattain
+  330  docker start jolly_brattain
+  331   docker ps 
+  332   docker ps 
+  333  docker run 71f26d5ef020
+  334   docker ps 
+  335  docker run hardcore_goodall
+  336  docker ps
+  337  docker run ba94a7d21cda
+  338  docker ps
+  339  docker run -it ba94a7d21cdaba94a7d21cda sh
+  340  docker run -it ba94a7d21cda sh
+  341  docker build -t ockers ockers
+  342  docker run -it ba94a7d21cda sh
+  343  docker build -t ockers ockers
+  344  docker run -it ba94a7d21cda sh
+  345  docker build -t ockers ockers
+  346  docker build -t ockers ockers --nocache
+  347  docker build --help
+  348  docker build -t ockers ockers --no-cache
+  349  docker run -it 4b04acec5a90 sh
+  350  docker build -t ockers ockers --no-cache
+  351  docker build -t ockers ockers --no-cache
+  352  вщслук ыещз
+  353  docker stop
+  354  docker stop 4b04acec5a90
+  355  docker help
+  356  docker build -t ockers ockers --no-cache
+  357  docker run -it 0d4db5e8d1af sh
+  358  docker run 0d4db5e8d1af
+  359  docker run -it 0d4db5e8d1af sh
+  360  docker run 0d4db5e8d1af
+  361  docker run -it 0d4db5e8d1af sh
+  362  docker run 0d4db5e8d1af
+  363  docker run -it 0d4db5e8d1af sh
+  364  docker run 0d4db5e8d1af
+  365  docker build -t ockers ockers --no-cache
+  366  docker run 53c77045adf6
+  367  cd ockers/
+  368  docker-compose 
+  369  docker-compose up
+  370  docker-compose up
+  371  ssh root@206.189.166.161
+  372  ssh root@206.189.166.161
+  373  ssh root@206.189.166.161
+  374  sftp root@206.189.166.161
+  375  ssh root@206.189.166.161
+  376  ssh root@206.189.166.161
+  377  ssh root@206.189.166.161
+  378  which node
+  379   whick Finder
+  380   which Finder
+  381   which Findernpm install -g create-react-native-app
+  382  npm install -g create-react-native-app
+  383  chmod 777 /usr/local/lib
+  384  npm install -g create-react-native-app
+  385  chmod 777 /usr/local/lib/node_modules
+  386  sudo -i
+  387  ssh root@206.189.166.161
+  388  ssh root@206.189.166.161
+  389  ssh root@206.189.166.161
+  390  ssh root@206.189.166.161
+  391  ifconfig
+  392  ssh a47992_zelebot@zelebot.ru
+  393  ssh a47992_zelebot@zelebot.ru
+  394  ssh a47992_zelebot@zelebot.ru
+  395  ssh a47992_zelebot@zelebot.ru
+  396  python manage.py runserver 0.0.0.0:8000
+  397  python3 manage.py runserver 0.0.0.0:8000
+  398  python3 manage.py runserver 0.0.0.0:8000
+  399  django -c
+  400  django -v
+  401  python3
+  402  ssh a47992_zelebot@zelebot.ru
+  403  ssh a47992_zelebot@zelebot.ru
+  404  ssh a47992_zelebot@zelebot.ru
+  405  ssh a47992_zelebot@zelebot.ru
+  406  ssh a47992_zelebot@zelebot.ru
+  407  ssh a47992_zelebot@zelebot.ru
+  408  ssh a47992_zelebot@zelebot.ru
+  409  ssh a47992_zelebot@zelebot.ru
+  410  ssh a47992_zelebot@zelebot.ru
+  411  ssh a47992_zelebot@zelebot.ru
+  412  ssh a47992_zelebot@zelebot.ru
+  413  ssh a47992_zelebot@a47992.ftp.mchost.ru
+  414  ssh a47992_zelebot@a47992.ssh.mchost.ru
+  415  ssh a47992_zelebot@a47992.mchost.ru
+  416  ssh a47992_zelebot@zelebot.ru
+  417  ssh a47992_zelebot@178.208.83.17
+  418  ssh -f -N -L 3306:a47992.mysql.mchost.ru:3306 a47992_zelebot@a47992.ftp.mchost.ru
+  419  ssh a47992_zelebot@zelebot.ru
+  420  ssh a47992_zelebot@zelebot.ru
+  421  ssh a47992_zelebot@zelebot.ru
+  422  ssh a47992_zelebot@zelebot.ru
+  423  ssh a47992_zelebot@zelebot.ru
+  424  ssh a47992_zelebot@zelebot.ru
+  425  ssh a47992_zelebot@zelebot.ru
+  426  ssh a47992_zelebot@zelebot.ru
+  427  ssh a47992_zelebot@zelebot.ru
+  428  ssh a47992_zelebot@zelebot.ru
+  429  ssh root@206.189.166.161
+  430  ls /dev/tty*
+  431  ls /dev/tty*
+  432  ls /dev/tty*
+  433  ls /dev/tty*
+  434  ls /dev/tty*
+  435  ls /dev/tty*
+  436  ls /dev/tty*
+  437  ls /dev/tty*
+  438  ls /dev/tty*
+  439  ls /dev/tty*
+  440  ls /dev/tty*
+  441  cd ~
+  442  ls
+  443  ls
+  444  ls /dev/tty*
+  445  ls /dev/tty*
+  446  ls /dev/tty*
+  447  killall python3 
+  448  killall python 
+  449  killall Telegram
+  450  apt-get install mysql-client
+  451  sudo apt-get install mysql-client
+  452  ls
+  453  brew install mysql-client
+  454  vagrant -v
+  455  ssh a47992_zelebot@zelebot.ru
+  456  ls
+  457  mkdir Analizo
+  458  cd Analizo
+  459  ls
+  460  git clone https://github.com/analizo/analizo.git
+  461  ды
+  462  ls
+  463  cd analizo
+  464  ls
+  465  ./development-setup.sh
+  466  brew install libzmq1 libzmq-dev uuid-dev libterm-progressbar-perl libmojolicious-perl libfile-homedir-perl libchi-driver-memcached-perl
+  467  ssh a47992_zelebot@zelebot.ru
+  468  ssh a47992_zelebot@zelebot.ru
+  469  bower install eonasdan-bootstrap-datetimepicker#latest --save
+  470  pip3 install bower
+  471  npm install bower
+  472  bower install eonasdan-bootstrap-datetimepicker#latest --save
+  473  bower install eonasdan-bootstrap-datetimepicker#latest --save
+  474  ssh a47992_zelebot@zelebot.ru
+  475  which openssl
+  476  openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
+  477  openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
+  478  openssl rsa -passin pass:x -in server.pass.key -out server.key
+  479  rm server.pass.key
+  480  openssl req -new -key server.key -out server.csr
+  481  openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
+  482  ls
+  483  /private/venvs/zelebotenv/bin/django-admin help
+  484  /private/venvs/myenv/bin/django-admin help
+  485  python3 manage.py runsslserver --certificate cert/server.crt --key cert/server.key
+  486  ssh a47992_zelebot@zelebot.ru
+  487  ssh a47992_zelebot@zelebot.ru
+  488  ssh a47992_zelebot@zelebot.ru
+  489  pip3 install django-bootstrap-email
+  490  pip3 install django-bootstrap-email
+  491  ssh a47992_zelebot@zelebot.ru
+  492  ssh a47992_zelebot@zelebot.ru
+  493  sudo apt-get install libreoffice-core --no-install-recommends
+  494  pip3 install pdfkit
+  495  pip install --pre xhtml2pdf # Python 3
+  496  pip3 install --pre xhtml2pdf # Python 3
+  497  pip3 install wkhtmltopdf
+  498  pip3 install weasyprint
+  499  ssh a47992_zelebot@zelebot.ru
+  500  ssh -X m.tkachenko@osc-7.edu.inopolis.ru
+  501  whoami
+  502  man whoami
+  503  man -h | head
+  504  ls
+  505  cd Documents
+  506  mkdir week1
+  507  cd mkdir
+  508  cd week1
+  509  ls
+  510  cd
+  511  ls ~/usr/bin | grep "gcc" | sort -r > /Documents/week1/ex1.txt
+  512  ls /usr/bin | grep "gcc" | sort -r > /Documents/week1/ex1.txt
+  513  ls /usr/bin | grep "gcc" | sort -r > ~/Documents/week1/ex1.txt
+  514  cd Documents/OS/week1
+  515  nano week1.sh
+  516  sh week1.sh
+  517  history
+  518  nano ex2.sh
+  519  sh week2.sh
+  520  sh ex2.sh
+  521  nano ex2.sh
+  522  sh ex2.sh
+  523  sh ex2.sh
+  524  history > ex22.txt
+  525  nano ex2.sh
+  526  sh ex2.sh
+  527  nano ex2.sh
+  528  sh ex2.sh
+  529  nano ex2.sh
+  530  sh ex2.sh
+  531  nano ex2.sh
+  532  sh ex2.sh
+  533  history > ex2.txt
