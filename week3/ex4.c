@@ -31,20 +31,20 @@ int partition (int arr[], int start, int end)
     return (i + 1); 
 } 
 
-void quickSort(int arr[], int start, int end)
+void quick_sort(int arr[], int start, int end)
 {
     if (start < end) {
         int pivot = partition(arr, start, end);
-        quickSort(arr, start, pivot- 1); 
-        quickSort(arr, pivot+ 1, end); 
+        quick_sort(arr, start, pivot- 1); 
+        quick_sort(arr, pivot+ 1, end); 
     }
 }
 
 
 
 int main() {
-	int arr[] = {10, 7, 8, 9, 1, 5}; 
-    quickSort(arr, 0, ARR_SIZE(arr)-1); 
+	int arr[] = {5,4,3,2,1}; 
+    quick_sort(arr, 0, ARR_SIZE(arr)-1); 
     print_array(arr, ARR_SIZE(arr)); 
     return 0; 
 }
