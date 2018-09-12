@@ -5,22 +5,15 @@
 #include <stdio.h>
 #include <string.h>
 
-#define LSH_RL_BUFSIZE 1024
-#define LSH_TOK_BUFSIZE 64
-#define LSH_TOK_DELIM " \t\r\n\a"
+#define console_RL_BUFSIZE 1024
+#define console_TOK_BUFSIZE 64
+#define console_TOK_DELIM " \t\r\n\a"
 
 
+int console_cd(char **args);
+int console_help(char **args);
+int console_exit(char **args);
 
-/*
-  Function Declarations for builtin shell commands:
- */
-int lsh_cd(char **args);
-int lsh_help(char **args);
-int lsh_exit(char **args);
-
-/*
-  List of builtin commands, followed by their corresponding functions.
- */
 char *builtin_str[] = {
   "cd",
   "help",
@@ -28,38 +21,33 @@ char *builtin_str[] = {
 };
 
 int (*builtin_func[]) (char **) = {
-  &lsh_cd,
-  &lsh_help,
-  &lsh_exit
+  &console_cd,
+  &console_help,
+  &console_exit
 };
 
-int lsh_num_builtins() {
+int console_num_builtins() {
   return sizeof(builtin_str) / sizeof(char *);
 }
 
-/*
-  Builtin function implementations.
-*/
-int lsh_cd(char **args)
+int console_cd(char **args)
 {
   if (args[1] == NULL) {
-    fprintf(stderr, "lsh: expected argument to \"cd\"\n");
+    fprintf(stderr, "console: expected argument to \"cd\"\n");
   } else {
     if (chdir(args[1]) != 0) {
-      perror("lsh");
+      perror("console");
     }
   }
   return 1;
 }
 
-int lsh_help(char **args)
+int console_help(char **args)
 {
   int i;
-  printf("Stephen Brennan's LSH\n");
-  printf("Type program names and arguments, and hit enter.\n");
   printf("The following are built in:\n");
 
-  for (i = 0; i < lsh_num_builtins(); i++) {
+  for (i = 0; i < console_num_builtins(); i++) {
     printf("  %s\n", builtin_str[i]);
   }
 
@@ -67,12 +55,12 @@ int lsh_help(char **args)
   return 1;
 }
 
-int lsh_exit(char **args)
+int console_exit(char **args)
 {
   return 0;
 }
 
-int lsh_launch(char **args)
+int console_launch(char **args)
 {
   pid_t pid, wpid;
   int status;
@@ -81,12 +69,12 @@ int lsh_launch(char **args)
   if (pid == 0) {
     // Child process
     if (execvp(args[0], args) == -1) {
-      perror("lsh");
+      perror("console");
     }
     exit(EXIT_FAILURE);
   } else if (pid < 0) {
     // Error forking
-    perror("lsh");
+    perror("console");
   } else {
     // Parent process
     do {
@@ -97,7 +85,7 @@ int lsh_launch(char **args)
   return 1;
 }
 
-int lsh_execute(char **args)
+int console_execute(char **args)
 {
   int i;
 
@@ -106,64 +94,62 @@ int lsh_execute(char **args)
     return 1;
   }
 
-  for (i = 0; i < lsh_num_builtins(); i++) {
+  for (i = 0; i < console_num_builtins(); i++) {
     if (strcmp(args[0], builtin_str[i]) == 0) {
       return (*builtin_func[i])(args);
     }
   }
 
-  return lsh_launch(args);
+  return console_launch(args);
 }
 
 
-char **lsh_split_line(char *line)
+char **console_split_line(char *line)
 {
-  int bufsize = LSH_TOK_BUFSIZE, position = 0;
+  int bufsize = console_TOK_BUFSIZE, position = 0;
   char **tokens = malloc(bufsize * sizeof(char*));
   char *token;
 
   if (!tokens) {
-    fprintf(stderr, "lsh: allocation error\n");
+    fprintf(stderr, "console: allocation error\n");
     exit(EXIT_FAILURE);
   }
 
-  token = strtok(line, LSH_TOK_DELIM);
+  token = strtok(line, console_TOK_DELIM);
   while (token != NULL) {
     tokens[position] = token;
     position++;
 
     if (position >= bufsize) {
-      bufsize += LSH_TOK_BUFSIZE;
+      bufsize += console_TOK_BUFSIZE;
       tokens = realloc(tokens, bufsize * sizeof(char*));
       if (!tokens) {
-        fprintf(stderr, "lsh: allocation error\n");
+        fprintf(stderr, "console: allocation error\n");
         exit(EXIT_FAILURE);
       }
     }
 
-    token = strtok(NULL, LSH_TOK_DELIM);
+    token = strtok(NULL, console_TOK_DELIM);
   }
   tokens[position] = NULL;
   return tokens;
 }
 
-char *lsh_read_line(void)
+char *console_read_line(void)
 {
-  int bufsize = LSH_RL_BUFSIZE;
+  int bufsize = console_RL_BUFSIZE;
   int position = 0;
   char *buffer = malloc(sizeof(char) * bufsize);
   int c;
 
   if (!buffer) {
-    fprintf(stderr, "lsh: allocation error\n");
+    fprintf(stderr, "console: allocation error\n");
     exit(EXIT_FAILURE);
   }
 
   while (1) {
-    // Read a character
     c = getchar();
 
-    // If we hit EOF, replace it with a null character and return.
     if (c == EOF || c == '\n') {
       buffer[position] = '\0';
       return buffer;
@@ -172,12 +158,11 @@ char *lsh_read_line(void)
     }
     position++;
 
-    // If we have exceeded the buffer, reallocate.
     if (position >= bufsize) {
-      bufsize += LSH_RL_BUFSIZE;
+      bufsize += console_RL_BUFSIZE;
       buffer = realloc(buffer, bufsize);
       if (!buffer) {
-        fprintf(stderr, "lsh: allocation error\n");
+        fprintf(stderr, "console: allocation error\n");
         exit(EXIT_FAILURE);
       }
     }
@@ -185,16 +170,16 @@ char *lsh_read_line(void)
 }
 
 
-void lsh_loop(void) {
+void console_loop(void) {
 	char *line;
 	char **args;
 	int status;
 
 	do {
 		printf("> ");
-		line = lsh_read_line();
-		args = lsh_split_line(line);
-		status = lsh_execute(args);
+		line = console_read_line();
+		args = console_split_line(line);
+		status = console_execute(args);
 
 		free(line);
 		free(args);
@@ -204,6 +189,6 @@ void lsh_loop(void) {
 
 int main(int argc, char const *argv[])
 {
-	lsh_loop();
+	console_loop();
 	return 0;
 }
