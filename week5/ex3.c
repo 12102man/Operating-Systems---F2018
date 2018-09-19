@@ -1,71 +1,84 @@
 #include <stdio.h>
-#include <time.h>
 #include <pthread.h>
 
-#define N 100 
+#define TRUE 1
+#define FALSE 0
+#define size 10
+
 int count = 0;
-char buffer[N];
-time_t start;
-int i = 0;
-pthread_mutex_t the_mutex;
-pthread_cond_t condc, condp;
+int array[size];
 
-void *producer(void *ptr)
-{
+int producer_is_alive = TRUE;
+int consumer_is_alive = FALSE;
 
- while (1) { 
-  pthread_mutex_lock(&the_mutex);
-  
-  if (count == N){
-   pthread_cond_wait(&condp, &the_mutex);
-  }
-  buffer[count] = 'p';
-  count = count + 1;
-  time_t end = time(NULL);
-  double fraction = (double)(end - start);
-
-  if(fraction > i*60){
-   printf("Time of execution:%f\n", ((double)(end - start)));
-   i++;
-  }
-
-  if (count == 1){
-   pthread_cond_signal(&condc);
-   pthread_mutex_unlock(&the_mutex);
-  }
- }
+int produce_item() {
+    return 0;
 }
 
-void *consumer(void *ptr)
-{
- while (1) { 
-  pthread_mutex_lock(&the_mutex);
-  if (count == 0){
-    pthread_cond_wait(&condc, &the_mutex);
-  }
-  buffer[count] = 'c';
-  count = count - 1;
-  if (count == N - 1){
-   pthread_cond_signal(&condp);
-   pthread_mutex_unlock(&the_mutex);
-  }
- }
+void push(int item) {
+    if (count == size-1) {
+        return;
+    }
+    count++;
+    array[count] = item;
 }
 
-int main(int argc, char const *argv[]){
-  start = time(NULL);
-  pthread_t pro, con;
-  pthread_mutex_init(&the_mutex, 0);
-  pthread_cond_init(&condc, 0);
-  pthread_cond_init(&condp, 0);
-  pthread_create(&con, 0, consumer, 0);
-  pthread_create(&pro, 0, producer, 0);
-  pthread_join(pro, 0);
-  pthread_join(con, 0);
-  pthread_cond_destroy(&condc);
-  pthread_cond_destroy(&condp);
-  pthread_mutex_destroy(&the_mutex);
+int pop() {
+    if (count == 0) {
+        return NULL;
+    }
+    int a = count;
+    count--;
+    return array[a];
+}
 
-  return 0;
+void sleep_thread(int *status) {
+    *status = FALSE;
+    while (*status == FALSE) {
+        if (status == &producer_is_alive) {
+            printf("Count=: %d\tProducer sleeps\n", count);
+        }
+        if (status == &consumer_is_alive) {
+            printf("Count=: %d\tConsumer sleeps\n", count);
+        }
+    }
+}
 
+void wakeup(int *status) {
+    if (*status == FALSE) *status = TRUE;
+}
+
+void *producer(void) {
+    int item;
+
+    while (TRUE) {
+        item = produce_item();
+        if (count == size) sleep_thread(&producer_is_alive);
+        push(item);
+
+        printf("Inserted\n");
+
+        if (count == 1) wakeup(&consumer_is_alive);
+    }
+}
+
+void *consumer(void) {
+    int item;
+    while (TRUE) {
+        if (count == 0) sleep_thread(&consumer_is_alive);
+        item = pop();
+
+        printf("Removed\n");
+
+        if (count == size - 1) wakeup(&producer_is_alive);
+    }
+}
+
+
+int main() {
+    pthread_t consumer_th, producer_th;
+    pthread_create(&consumer_th, NULL, consumer, NULL);
+    pthread_create(&producer_th, NULL, producer, NULL);
+
+    pthread_exit(NULL);
 }
