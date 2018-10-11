@@ -1,0 +1,10 @@
+Ex. 5. Difference between physical and virtual address.
+
+Physical address:
+User can't directly access physical address.
+Physical address is the address of memory cell used by hardware.
+
+
+Virtual address:
+User can access virtual address.
+Virtual address is an abstraction layer between user and physical address.
