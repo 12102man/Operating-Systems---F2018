@@ -1,0 +1,3 @@
+To increase hit/miss ratio, we need either use bigger page table, or use pages close to each other.
+
+To decrease hit/miss ratio, we need to either use smaller page table, or use pages far from each other.
