@@ -1,0 +1,5 @@
+"find -inum <nodenumber>" results:
+./week10/_ex2.txt
+./week1/file.txt
+
+After removing links "find -inum <nodenumber>" results nothing. Files are also removed.

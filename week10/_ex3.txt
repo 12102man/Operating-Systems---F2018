@@ -1,0 +1,9 @@
+To make equal permissions:
+chmod u=a <filename>
+
+We have 9 bits for Owner, Group and Others
+Each 3 bits are assigned to a group (r,w,x). If we want to assign r&w to Owner, first number must be 110 in binary, which means 6 in decimal.
+
+660: Owner-rw; Group-rw; Others-none
+775: Owner-rwx; Group-rwx; Others-rx
+777: rwx to Owner, Group and Others
