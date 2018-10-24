@@ -1,0 +1,5 @@
+.: 3
+..: 25
+file1.txt: 1
+file2.txt: 2
+link1: 2
