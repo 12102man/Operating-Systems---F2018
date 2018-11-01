@@ -1,0 +1,11 @@
+Output 1:
+Hello
+Hello
+
+Output 2:
+Hello
+
+
+This happens because printf content gets buffered before \n symbol. 
+In case 1 "Hello" is getting printed twice, because it gets buffered in parent process and gets called twice% from child one and parent one. 
+In case 2 buffer gets cleaned after \n and "Hello" is printed twice.

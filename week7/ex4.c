@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void *custom_realloc(void *ptr, size_t currentLength, size_t newLength)
 {
@@ -28,6 +29,16 @@ void *custom_realloc(void *ptr, size_t currentLength, size_t newLength)
 }
 
 int main() {
-	int *array1 = malloc(5*sizeof(int));
-	int *array2 = custom_realloc(array1, sizeof(int)*5, sizeof(int)*10);
+	int *array1 = malloc(3*sizeof(int));
+	array1[0] = 100;
+	array1[1] = 200;
+	array1[2] = 300;
+	for (int i=0; i<3; i++) {
+		printf("%d ",array1[i]);
+	}
+	printf("\n");
+	int *array2 = custom_realloc(array1, sizeof(int)*3, sizeof(int)*10);
+	for (int i=0; i<10; i++) {
+		printf("%d ", array2[i]);
+	}
 }
