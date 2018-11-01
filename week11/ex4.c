@@ -1,13 +1,12 @@
 #include <stdio.h>
-#include <sys/stat.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <dirent.h>
 #include <sys/types.h>
-#include <unistd.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <dirent.h>
 
 int main() {
     int from = open("file1.txt", O_RDONLY);
