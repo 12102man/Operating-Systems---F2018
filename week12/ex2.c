@@ -20,9 +20,9 @@ int main(int argc, char *argv[] ) {
 	}
 
 	if (add == 0) {
-		output = fopen(argv[3], "w");
+		output = fopen(argv[argc-1], "w");
 	} else {
-		output = fopen(argv[3], "a");
+		output = fopen(argv[argc-1], "a");
 	}
 
 	while (read(0, &buffer, 1) > 0) {
