@@ -1,0 +1,1 @@
+When buffer and file size are big, O_ASYNC works faster. This happens because of asyncronous mode: we don't block processes each time we transfer data, like in O_SYNC mode. From this it's reasonable that for small data and buffer these modes work almost for the same speed.

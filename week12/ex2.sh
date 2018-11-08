@@ -1,0 +1,1 @@
+sysctl -a | grep machdep.cpu | ./ex2 tee -a ex2.txt
